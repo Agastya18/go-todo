@@ -28,7 +28,7 @@ func main() {
 
 	if os.Getenv("ENV") != "production" {
 		// Load the .env file if not in production
-		err := godotenv.Load(".env")
+		err := godotenv.Load()
 		if err != nil {
 			log.Fatal("Error loading .env file:", err)
 		}
